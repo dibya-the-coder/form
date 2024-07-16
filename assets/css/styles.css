@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: rgb(169, 53, 223);
+    text-shadow: 2px 2px 5px #2b4074
+}
+.container{
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    padding: 0;
+}
+
+form{
+    border-radius: 20px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    box-shadow: 0px 0px 13px rgb(169, 53, 223);
+    margin: 2rem 0;
+}
+form>div{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    width: 100%;
+    box-shadow: 0px 0px 13px rgb(169, 53, 223);
+    padding: 1rem 0;
+    border-radius: 20px;
+}
+thead{
+    color: rgb(174, 0, 255);
+    height: 2rem;
+}
+.rows td , .rows th, .rows tr{
+    height: 2rem;
+    width: 20%;
+    text-align: center;
+    align-items: center;
+}
+.rows button{
+    height: 25px;
+    width: 25px;
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    border: none;
+    padding: 5px;
+}
+/* .rows div :first-child button{
+    content:  url("/assets/image/delete-icon.svg");
+    background-color: #a12d2d;
+} */
+
+.rows .icons :first-child button:first-of-type {
+    background-color: #a12d2d;
+    background-image: url("/assets/image/delete-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rows .icons :last-child button:last-of-type {
+    
+    background-color: #4c8b17;
+    background-image: url("/assets/image/edit-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input{
+    height: 3rem;
+    background-color: #f3f3f3;
+    border:none;
+    border-radius: 15px;
+    padding: 0 1rem
+}
+.input-error{
+    color: rgb(255, 0, 0);
+    visibility: hidden;
+}
+#submit-button{
+    background-color: rgb(174, 0, 255);
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.table-heading{
+    padding: 2rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 25%;
+}
+.icons span{
+    width: 16px;
+    height: 16px;
+}
+#confirm-msg{
+    background-color: #17941d;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 40%;
+    visibility: hidden;
+}

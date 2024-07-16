@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>REGISTRATION FORM</h1>
+            <form id="form" onsubmit="handleOnSubmit(event)" action="">
+                <div>
+                    <label for="name">NAME</label>
+                    <input onchange="handleOnChange(event)" required id="name" type="text">
+                    <div class="input-error" id="name-error">Name can only contain character</div>
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input onchange="handleOnChange(event)" required id="email" type="text">
+                    <div class="input-error" id="email-error">Not a valid email</div>
+                </div>
+                <div>
+                    <label for="phone">PHONE NO.</label>
+                    <input onchange="handleOnChange(event)" required id="phone" type="text">
+                    <div class="input-error" id="phone-error">phone number must be in numeric and of 10 number</div>
+                </div>
+                <div>
+                    <label for="password">PASSWORD</label>
+                    <input onchange="handleOnChange(event)" required id="password" type="password">
+                    <div class="input-error" id="password-error">not a valid password</div>
+                </div>
+                <button id="submit-button" type="submit">SUBMIT</button>
+                <div id="confirm-msg">
+                    Form submitted successfully
+                </div>
+            </form>
+
+            <div id="no-data">
+                No record avialable
+            </div>
+            
+            <table id="my_table">
+                <thead>
+                    <tr class="rows">
+                        <th>NAME</th>
+                        <th>EMAIL</th>
+                        <th>PHONE NO.</th>
+                        <th>PASSWORD</th>
+                        <th>UPDATE</th>
+                    </tr>
+                </thead>
+                <tbody onload="hadleOnLoad()" id="table-datas">
+                  
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="./assets/js/script.js"></script>
+</html>
